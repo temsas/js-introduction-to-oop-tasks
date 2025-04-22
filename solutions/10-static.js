@@ -1,6 +1,9 @@
 export default class Time {
   // BEGIN
-
+  static fromString(time) {
+    const [hours, min] = time.split(':')
+  return new Time(Number(hours), Number(min))
+  }
   // END
 
   constructor(hours, minutes) {

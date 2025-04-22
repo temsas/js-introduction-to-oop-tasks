@@ -32,5 +32,10 @@ Segment.prototype.getEndPoint = function getEndPoint() {
   };
 
 // BEGIN
-
+Point.prototype.toString = function toString() {
+    return `(${this.x}, ${this.y})`;
+};
+Segment.prototype.toString = function toString() {
+    return `[${this.beginPoint}, ${this.endPoint}]`;
+}
 // END
